@@ -210,9 +210,9 @@ end
 function equipAndDropItem()
     while toggleState do
         equipItem(searchTerm)
-        wait(0.2) -- Decreased delay to make the process faster
+        wait(1) -- Decreased delay to make the process faster
         dropItem(searchTerm)
-        wait(0.2) -- Decreased delay to make the process faster
+        wait(1) -- Decreased delay to make the process faster
     end
 end
 
@@ -268,7 +268,7 @@ crafttab.newButton("Craft Lava Sword", "(REQUIRES VOLCANO)", function()
 end)
 
 local afktab = DrRayLibrary.newTab("anti Afk", "ImageIdHere")
-afkttab.newButton("Anti Afk", "leave keyboars and no kick", function()
+afktab.newButton("Anti Afk", "leave keyboars and no kick", function()
     wait(0.5)local ba=Instance.new("ScreenGui")
     local ca=Instance.new("TextLabel")local da=Instance.new("Frame")
     local _b=Instance.new("TextLabel")local ab=Instance.new("TextLabel")ba.Parent=game.CoreGui
