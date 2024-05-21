@@ -1,11 +1,6 @@
 local DrRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/DrRay-UI-Library/main/DrRay.lua"))()
 local window = DrRayLibrary:Load("Pop It hub V3", "Default")
 
-local credtab = DrRayLibrary.newTab("Credits", "ImageIdHere")
-credtab.newButton("Scripted By ellis", "Found Item names - J", function()
-     print("W J and Ellis")
-end)
-
 local buytab = DrRayLibrary.newTab("Main", "ImageIdHere")
 buytab.newButton("Buy All code items", "buys all the code items", function()
     local args = { [1] = "Tweet" } game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) wait(1)
